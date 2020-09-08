@@ -8,6 +8,11 @@ FROM Orders
 WHERE ShipperID==1
 /* Answer: 54 */
 
+/*I would have prefered to create temporary tables when solving b and c to reduce the size of the tables being joined because joining is expansive.
+It seems that unlike in Google Big Query, the SQL format here does not allow the query to run in one go if I create Tables. And Tables actually get added to the Database, which seems undesirable.
+Therefore, I decided to smash everything into one query.
+I would normally keep more columns just to double-check the results. With the assumption that the questions are asking for only the answer being return, I decided to go with the following approaches. */
+
 /* b.What is the last name of the employee with the most orders? */
 
 /* Query: */
