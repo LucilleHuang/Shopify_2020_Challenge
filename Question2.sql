@@ -19,7 +19,7 @@ I decided to go with the following approaches. */
 
 /* Query: */
 SELECT COUNT(OrderID) AS countOrder
-	  ,Orders.EmployeeID
+      ,Orders.EmployeeID
       ,Lastname
 FROM Orders
 JOIN Employees ON Orders.EmployeeID == Employees.EmployeeID
